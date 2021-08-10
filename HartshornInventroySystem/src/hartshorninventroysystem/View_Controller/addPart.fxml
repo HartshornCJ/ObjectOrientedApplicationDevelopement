@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="403.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hartshorninventroysystem.View_Controller.AddPartController">
+   <children>
+      <Label layoutX="14.0" layoutY="26.0" text="Add Part" textFill="#0004f0" />
+      <Button fx:id="Cancel" layoutX="377.0" layoutY="364.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="83.0" text="Cancel" />
+      <Button fx:id="Save" layoutX="278.0" layoutY="364.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="83.0" text="Save" />
+      <Label layoutX="47.0" layoutY="74.0" text="ID" />
+      <Label layoutX="47.0" layoutY="122.0" text="Name" />
+      <Label layoutX="47.0" layoutY="168.0" text="Inv" />
+      <Label layoutX="47.0" layoutY="218.0" text="Price/Cost" />
+      <Label layoutX="47.0" layoutY="268.0" text="Max" />
+      <TextField fx:id="ID" editable="false" layoutX="180.0" layoutY="70.0" promptText="Auto Gen - Disabled" />
+      <TextField fx:id="Name" layoutX="180.0" layoutY="118.0" promptText="Part Name" />
+      <TextField fx:id="Inv" layoutX="180.0" layoutY="173.0" promptText="Inv" />
+      <TextField fx:id="Min" layoutX="342.0" layoutY="264.0" prefHeight="25.0" prefWidth="70.0" promptText="Min" />
+      <TextField fx:id="TextInOut" layoutX="180.0" layoutY="311.0" prefHeight="25.0" prefWidth="109.0" promptText="Comp Nm" />
+      <TextField fx:id="Max" layoutX="180.0" layoutY="264.0" prefHeight="25.0" prefWidth="70.0" promptText="Max" />
+      <Label layoutX="286.0" layoutY="268.0" text="Min" />
+      <Label fx:id="LabelOutIn" layoutX="49.0" layoutY="315.0" text="Company Name" />
+      <TextField fx:id="Price" layoutX="180.0" layoutY="214.0" promptText="Price/Cost" />
+      <RadioButton fx:id="OutsourcedToggle" layoutX="295.0" layoutY="22.0" mnemonicParsing="false" onAction="#partStateToggle" prefHeight="25.0" prefWidth="109.0" selected="true" text="Outsourced" />
+      <RadioButton fx:id="InHouseToggle" layoutX="168.0" layoutY="22.0" mnemonicParsing="false" onAction="#partStateToggle" prefHeight="25.0" prefWidth="109.0" text="In-House" />
+   </children>
+</AnchorPane>
